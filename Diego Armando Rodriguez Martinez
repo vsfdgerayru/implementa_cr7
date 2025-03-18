@@ -1,14 +1,15 @@
-texto=input("Tu texto: ")
-if texto== texto.upper():
+escrito=input("Tu escrito: ")
+iftexto=input("Tu escrito: ")
+if escrito== escrito.upper():
     abc="ABCDEFGHIJKLMNOPQRSTVXYZ"
 else:
     abc="abcdefghijklmnopqrstuvwxyz"
 k=int(input("Valor de desplazamiento "))
 cifrad=""
-for c in texto:
+for c in escrito:
     if c in abc:
         cifrad+= abc[(abc.index(c)+k)%(len(abc))]
     else:
         cifrad+=c
-print("Texto cifrado: ", cifrad)
-                    
+print("escrito cifrado: ", cifrad)
+                     
